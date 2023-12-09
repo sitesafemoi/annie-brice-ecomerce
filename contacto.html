@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-contacto.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="icon" type="jpg/png" href="img/logo-ico.png">
+	<title>FrontEnd Store - Contacto</title>
+</head>
+<body>
+	<header id="header">
+
+	  	<div class="contenedor">
+	  		<a href="index.html">
+	  			<img id="logo" src="img/logo.png" alt="Logo Anni & Brice">
+	  		</a>
+			<nav class="nav-principal">
+			 	
+				<ol id="lista-menu">
+			 		<a href="index.html" ><li class="li-nav">Tienda</li></a>
+			 		<a href="nosotros.html" target="__blanck"><li class="li-nav">Sobre Nosotros</li></a>
+			 		<a href="contacto.html" target="__blanck"><li class="li-nav li-nav_active">Contacto</li></a>
+			    </ol>
+		   </nav>
+		</div>	
+
+	    <!-- Menu responsive --->	 	 
+		   <div id="cont-upmenu">
+			 	<svg id="menu-icon"xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+				<path d="M4 6l16 0" />
+				<path d="M4 12l16 0" />
+				<path d="M4 18l16 0" />
+				</svg>
+
+			 	<ol id="lista-responsive">
+			 		<a href="index.html">
+						<li class="li-res">Tienda
+						</li>
+					</a>
+			 		<a href="nosotros.html">
+						<li class="li-res">Sobre Nosotros
+						</li>
+					</a>
+			 		<a href="contacto.html">
+						<li class="li-res" >Contacto
+						</li>
+					</a>
+			 	</ol>
+			</div><!--Cierre menu responsive-->
+			
+	</header>
+
+	<h1>Contacto</h1>
+
+	<form id="formulario" method="post" action="index.html">
+			<fieldset id="area-contacto">
+			<legend>Coctactanos llenando todos los campos</legend>
+			<div class="cont-form">   
+	<div class="cont-label">
+				<label for="name">Nombre</label>
+				<input type="text" id="name" placeholder="Tu Nombre" required>
+				</div>
+
+				<div class="cont-label">
+				<label for="tel">telèfono</label>
+				<input type="tel" id="tel" placeholder="Tu telèfono" required>
+	</div>
+
+				<div class="cont-label">
+				<label for="email" >Email</label>
+				<input type="Email" id="email" placeholder="tucorreo@gmail.com" required>
+	</div>
+
+				<div class="cont-label">
+		<label for="textarea">Mensaje</label>
+		<textarea name="textarea1" id="textarea" cols="30" rows="10" required>
+		</textarea>
+	</div>
+	</div> <!-- Cierre del cont-form -->	
+	<div>
+		
+		<button id="boton-enviar"  type="submit">Enviar</button>
+		
+	</div>
+	
+		</fieldset>
+	</form>
+
+
+	<section class="cont-redes">
+		<h2>Nuestras redes sociales</h2>
+		<div class="div-redes-grid">
+			<a href="https://web.whatsapp.com/" target="_blank">
+				<img src="../img/logo-whatsapp.png" alt="">
+			</a>
+			<a href="https://www.facebook.com/" target="_blank">
+				<img src="./img/logo-facebook.png" alt="">
+			</a>
+			<a href="https://www.instagram.com/" target="_blank">
+				<img src="./img/logo-instragram.png" alt="">
+			</a>
+			<a href="#" target="_blank">
+				<img src="./img/logo-telegram.png" alt="">
+			</a>
+		</div>
+	</section>
+
+    <footer id="footer" >
+		<p>Front End Store by Moises Sardinha © Todos los derechos Reservados 2023.</p>
+	    <p>Otros proyectos:</p>
+		<a id="a-footer"	 href="https://sitesafemoi.github.io/moises-proyecto1/" target="_blank" style="color:cadetblue">Sito web "Freelancer"</a>
+	</footer>
+
+</body>
+</html>
