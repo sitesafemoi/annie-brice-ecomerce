@@ -1,0 +1,154 @@
+/*-- ESTILOS A LA PAGINDA "SOBRE NOSOTROS" --*/
+#cont-main{
+	display: grid;
+	width: 55%;
+	height: 25rem;
+	margin: 0 auto;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+#h1-sobreNosotros{
+	margin: 1rem 0;
+}
+.h2-sobre{
+	color: var(--principal);
+	margin-top: 1.9rem;
+}
+#cont-servicios{
+	display: grid;
+	width: 55%;
+	height: 15rem;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+	grid-template-columns: repeat(4, 1fr);
+}
+#cont-servicios h3{
+	color: #150330;
+}
+.cont-servicios-div{
+	border-radius: 5px;
+	background-color: var(--beigeOscuro);
+	margin: 0 1rem;
+	height: 18rem;
+	transition: all .1s;
+}
+.cont-servicios-div:hover{
+	transform: scale(1.01);
+}
+.cont-img-money{
+	width: 8rem;
+	margin: 2rem auto;
+	margin-bottom: 2.8rem;
+	
+}
+#money-img{
+	width: 100%;
+	
+}
+.width{
+	width: 15rem;
+	height: 12rem;
+	margin: 0 auto;
+	margin-bottom: 1.3rem;
+}
+#hr{
+	display: none;
+}
+#footer{
+	margin-top: 8rem;
+	background-color: var(--beige);
+}
+/* Responsive */
+@media screen and (max-width:1150px){
+	#cont-main{
+		width: 70%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+		height: 70rem;
+    }
+	.cont-img-money{
+		width: 8.5rem;
+		margin: 2rem auto;
+		margin-bottom: 1rem;
+	}
+	#cont-servicios{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		row-gap: 2rem;
+		height: 40rem;
+		row-gap: 1rem;
+	}
+	.cont-servicios-div img{
+		width: 15rem;
+		margin: 0 auto;
+	}
+	.h2-sobre{
+		margin-top: 2rem;
+	}
+	.width{
+		margin-bottom: 0rem;
+	}
+}
+
+
+@media screen and (max-width:870px){
+	#cont-main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+		height: 66rem;
+    }
+	.width{
+		margin-bottom: 0rem;
+	}
+	
+}
+
+
+@media screen and (max-width:700px){
+	#cont-main{
+		width: 70%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+		height: 72rem;
+    }
+	.cont-img-money{
+		width: 8.5rem;
+		margin: 2rem auto;
+		margin-bottom: 1rem;
+	}
+	#cont-servicios{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		row-gap: 2rem;
+		height: 40rem;
+		
+	}
+	.cont-servicios-div img{
+		width: 15rem;
+		margin: 0 auto;
+	}
+	.h2-sobre{
+		margin-top: 2rem;
+	}
+	#cont-servicios{
+		margin-top: 2rem;
+		width: 70%;
+		row-gap: .5rem;
+	}
+	#hr{
+		display: block;
+	}	
+}
+
+@media screen and (max-width:500px){
+	#cont-servicios{
+		width: 100%;
+	}
+	.h2-sobre{
+		margin-top: 5rem;
+	}
+	#cont-main{
+		width: 85%;
+		height: 60rem;
+	}	
+}
