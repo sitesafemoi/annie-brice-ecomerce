@@ -5,4 +5,4 @@ Este proyecto es un E-commerce web básico, solo con HTML y CSS, donde encontrar
 
 
 ![App Screenshot](https://sitesafemoi.github.io/annie-brice-ecomerce/img/logo.png)
-![App Screenshot](https://sitesafemoi.github.io/annie-brice-ecomerce/img/grafico1.jpg)
+![image](https://github.com/sitesafemoi/annie-brice-ecomerce/assets/128161888/144e5dc6-1d3c-442a-a300-3be0a52f703a)
