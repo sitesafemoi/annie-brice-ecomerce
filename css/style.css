@@ -169,6 +169,8 @@ p{
 /* ** Contenedor del inicio **  */
 .cont-inicio{
 	width: 100%;
+	max-width: 160rem;
+	margin-inline: auto;
 	height: 57rem;
 	display: flex;
 	flex-direction: row;
@@ -269,6 +271,18 @@ p{
     }
  
 }
+/* Estilos a la flecha */
+#flecha{
+	width:7rem;
+	margin-top: 1.5rem;
+	transition: .5s;
+	z-index: -30;
+}
+/* Hover en la flecha */
+#flecha:hover,#flecha2:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
 /* Cambiamos el posicionamiento para dispositvos mobil */
 
 @media screen and (max-width:800px){
@@ -328,17 +342,7 @@ p{
 	object-fit: cover;
     }
 }
-/* Estilos a la flecha */
-#flecha{
-	width:7rem;
-	margin-top: 5rem;
-	transition: .5s;
-}
-/* Hover en la flecha */
-#flecha:hover,#flecha2:hover{
-	cursor: pointer;
-	transform: scale(1.1);
-}
+
 /*contenedora del fondo gris*/
 .back-cont{
   width: 100%;
