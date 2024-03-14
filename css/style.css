@@ -147,14 +147,15 @@ p{
 /* li del down menu */
 .li-res{
 	list-style: none;
-	color: var(--blanco);
 	margin-top:5rem;
 	font-size: 2.5rem;
-	transition: all .2s;
 }
-.li-res:hover{
+.li-res a{
+	color: var(--blanco);
+	transition:color .2s;
+}
+.li-res a:hover{
 	color: var(--beigeOscuro);
-	transform: scale(1.05);
 }
 
 /* cont del logo */
