@@ -73,13 +73,32 @@ p{
 	z-index: 100;
 }
 
-/* Nav principal */
+/* **Nav principal** */
 .nav-principal{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	width: 100%;
 	height: 100%;
+}
+/* Links del nav */
+.li-nav{
+	color: var(--negro);
+	display: inline;
+	margin-left:4rem;
+	border-bottom: solid 2px var(--blanco);
+	transition:border .7s;	
+}
+.li-nav a {
+	color: var(--negro);
+	transition: color .1s;	
+}
+/* Hover en los liks del nav */
+.li-nav_active,
+.li-nav:hover, .li-nav a:hover{
+	color: var(--principal);
+	padding-bottom: .1rem;
+	border-bottom: solid .2rem var(--principal);
 }
 
 /* Logo AB */
@@ -101,9 +120,7 @@ p{
 	margin: 0;
 	padding: 0;
 }
-#cont-upmenu{
-	display: none;
-}
+
 /* Nav y menu  responsive */
 
 @media screen and (max-width:1150px){/*ancho - no sea mayor se cumple */
@@ -142,26 +159,8 @@ p{
 		display: block;
 		z-index: 222;
 	}
- 	/* cont del logo */
- 	#cont-upmenu{
-	position: absolute;
-	z-index: 1000;
-	right: 3rem;
-	top: -100px;
-	width: 4.4rem;
-	margin: 0;
-	height: 1rem;
-	background-color: rgba(11, 31, 57, .6);
-	color: rgba(11, 31, 57, .6);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    /*transition: all 2s;*/
-    transition:  width 1s, height 1s, color 3s;
-
- 	}
- 	/* Hover en el boton del menu */
- 	#cont-upmenu:hover {
+/* Hover en el boton del menu */
+#cont-upmenu:hover {
  	right: 0;
     cursor: pointer;
     width: 78.8%;
@@ -183,25 +182,30 @@ p{
 	color: var(--beigeOscuro);
 	transform: scale(1.05);
 }
-/* Links del nav */
-.li-nav{
-	color: var(--negro);
-	display: inline;
-	margin-left:4rem;
-	border-bottom: solid 2px var(--blanco);
-	transition:border .7s;	
+
+/* cont del logo */
+#cont-upmenu{
+	position: absolute;
+	z-index: 1000;
+	right: 3rem;
+	top: -100px;
+	width: 4.4rem;
+	margin: 0;
+	height: 1rem;
+	background-color: rgba(11, 31, 57, .6);
+	color: rgba(11, 31, 57, .6);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	/*transition: all 2s;*/
+	transition:  width 1s, height 1s, color 3s;
 }
-.li-nav a {
-	color: var(--negro);
-	transition: color .1s;	
+@media screen and (max-width:575px) {
+	#cont-upmenu{
+		display: flex;
+	}
 }
-/* Hover en los liks del nav */
-.li-nav_active,
-.li-nav:hover, .li-nav a:hover{
-	color: var(--principal);
-	padding-bottom: .1rem;
-	border-bottom: solid .2rem var(--principal);
-}
+
 /* contenedor del inicio  */
 .cont-inicio{
 	width: 100%;
