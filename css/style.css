@@ -57,7 +57,8 @@ p{
 
 /*Contenedor principal - base*/
 .contenedor{
-	width: 65%;
+	max-width: 120rem;
+	width: min(90%, 120rem);
 	height: 100%;
 	margin: 0 auto;	
 }
@@ -121,35 +122,9 @@ p{
 	padding: 0;
 }
 
-/* Nav y menu  responsive */
-
-@media screen and (max-width:1150px){/*ancho - no sea mayor se cumple */
-	.contenedor{
-	width: 70%;
-	margin: 0 auto;
-	}
-}
-@media screen and (max-width:880px){/*ancho - no sea mayor se cumple */
-	.contenedor{
-	width: 80%;
-	
-	margin: 0 auto;
-	
-	}
-}
-/* cuando baje de 780 */
-@media screen and (max-width:780px){/*ancho - no sea mayor se cumple */
-	.contenedor{
-	width: 90%;
-	margin: 0 auto;
-	}
-}
-
 /* dawn menu */
 @media screen and (max-width:575px){/*min-cuando baje*/
-	.contenedor{
-	width: 95%;
-	}
+	
 	#lista-menu{
 		display: none;
 	}
