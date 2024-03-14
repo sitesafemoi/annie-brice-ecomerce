@@ -176,7 +176,6 @@ p{
 	list-style: none;
 	color: var(--blanco);
 	margin-top:5rem;
-
 	font-size: 2.5rem;
 	transition: all .2s;
 }
@@ -192,12 +191,16 @@ p{
 	border-bottom: solid 2px var(--blanco);
 	transition:border .7s;	
 }
+.li-nav a {
+	color: var(--negro);
+	transition: color .1s;	
+}
 /* Hover en los liks del nav */
 .li-nav_active,
-.li-nav:hover {
+.li-nav:hover, .li-nav a:hover{
 	color: var(--principal);
 	padding-bottom: .1rem;
-	border-bottom: solid 2px var(--principal);
+	border-bottom: solid .2rem var(--principal);
 }
 /* contenedor del inicio  */
 .cont-inicio{
