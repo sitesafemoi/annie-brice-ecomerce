@@ -90,10 +90,7 @@ p{
 	border-bottom: solid 2px var(--blanco);
 	transition:border .7s;	
 }
-.li-nav a {
-	color: var(--negro);
-	transition: color .1s;	
-}
+
 /* Hover en los liks del nav */
 .li-nav_active,
 .li-nav:hover, .li-nav a:hover{
@@ -101,7 +98,10 @@ p{
 	padding-bottom: .1rem;
 	border-bottom: solid .2rem var(--principal);
 }
-
+.a-link {
+	color: var(--negro);
+	transition: color .1s;	
+}
 /* Logo AB */
 #logo{
 	position: absolute;
@@ -124,7 +124,6 @@ p{
 
 /* dawn menu */
 @media screen and (max-width:575px){/*min-cuando baje*/
-	
 	#lista-menu{
 		display: none;
 	}
